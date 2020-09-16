@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ozone Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><img id="logo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcREkV772ridJPmQmblweNVarUYObogeDyLmzA&usqp=CAU"
+            alt="Logo"></header>
+    <div class="top container">
+        <h1>Welcome to The Ozone Shop!</h1>
+        <p>Select your favorite ozone harming repellent products, confirm your mobile number <br> and get them delivered in 1 hour -
+            </p>
+        <div class="button store">What’s in store?</div>
+    </div>
+    <div class="table container" id="table-container">
+        <h2>Here’s What Is In Store Today</h2>
+        <table>
+            <!-- <table></table>
+            <th></th>
+            <tr></tr>
+            <td></td> -->
+            <tr>
+                <th>Select</th>
+                <th>Item</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-h7eeqi5fp4e1t23dolbkqa27i2-20191024113511.Medi.jpeg" alt="Image"></td>
+                <td>Electric car</td>
+                <td>17,00,000 Rs</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="data:image/jpeg;base64,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" alt="Image"></td>
+                <td>Halon Fire Extinguisher</td>
+                <td>3000 Rs</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://4.bp.blogspot.com/-1tIm14sY4gE/WCKUgF2GtKI/AAAAAAAABCw/02sFdVE3q1AUbIGDV3nElQW-HjdVRjW8ACLcB/s1600/Strike%2BInsecticide.png" alt="Image"></td>
+                <td>Strike insect repellent which has no harmful cfc's</td>
+                <td>200 Rs</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox"></td>
+                <td><img src="https://5.imimg.com/data5/BS/AS/MY-36255665/untitled-1-500x500.jpg" alt="Image"></td>
+                <td>Ozone Harming reppellent bio fungiside</td>
+                <td>100 Rs</td>
+            </tr>
+        </table>
+        <p>One last step to place your order. <br> Enter your mobile number and you are done!</p> <br></br>
+        <input id="mobile" type="number" placeholder="Enter your moblie number"> <br></br>
+        <div class="button" onclick="buy()" id="buy-now"><b>Buy Now</b></div> <br></br>
+        <h4 id="thanks">Thank You For Shopping With Us</h4>
+    </div>
+    <footer>
+        <p>Made with 💖 by ProGrad Juniors, Mahetha Prabhu💖, Amresh Patnaik😎 and Tanve Sribharath💗</p>
+    </footer>
+    <script>
+        function buy() {
+            document.getElementById("buy-now").style.display = "none";
+            document.getElementById("thanks").style.display = "inherit";
+        }
+    </script>
+</body>
+</html>
